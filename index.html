@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌐 Language Translator</h1>
+        <p>Translate text from one language to another</p>
+
+        <label for="inputText">Enter Text:</label>
+
+        <textarea
+            id="inputText"
+            placeholder="Type or paste text here..."
+        ></textarea>
+
+        <div class="language-box">
+
+            <div>
+                <label for="sourceLanguage">From:</label>
+
+                <select id="sourceLanguage">
+                    <option value="en">English</option>
+                    <option value="kn">Kannada</option>
+                    <option value="hi">Hindi</option>
+                    <option value="sp">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="targetLanguage">To:</label>
+
+                <select id="targetLanguage">
+                    <option value="kn">Kannada</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="sp">Spanish</option>
+                    <option value="fr">French</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button id="translateBtn">Translate</button>
+
+        <h3>Translated Text:</h3>
+
+<div id="outputText">
+    Your translated text will appear here...
+</div>
+
+<button id="speakBtn">🔊 Listen</button>
+
+    </div>
+        <script src="https://js.puter.com/v2/"></script>
+        <script src="script.js"></script>
+
+</body>
+</html>
